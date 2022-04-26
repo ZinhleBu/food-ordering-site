@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.block {
+    visibility: visible;
+}
+
+.container_loading {
+    min-height: 600px;
+    width: 100%;
+}
+
+.container {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #fff;
+    @media (max-width: "850px") {
+        flex-direction: column;
+    }
+    .subtitle {
+        font-family: 'Abril Fatface', cursive;
+    }
+    .banner {
+        background-color: #fff;
+        min-width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .sub_info {
+        display: flex;
+        font-size: .8rem;
+        color: #9A9a9a;
+    }
+    .container_categories_top {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: flex-start;
+        padding: 0;
+        li {
+            list-style: none;
+            text-align: center;
+        }
+    }
+    .container_categories {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: flex-start;
+        padding: 0;
+    }
+}

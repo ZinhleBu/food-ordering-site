@@ -1,0 +1,29 @@
+.details_wrapper {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100%;
+    display: flex;
+    top: 0;
+    z-index: 0;
+    justify-content: space-around;
+    align-items: center;
+    .details_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        min-width: 50%;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+    }
+    .details_content {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        min-height: 100vh;
+        min-width: 50%;
+    }
+}
